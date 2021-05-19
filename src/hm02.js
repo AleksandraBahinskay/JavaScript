@@ -272,3 +272,73 @@ function calculateTotalPrice(order) {
 }
 
 //27
+function filterArray(numbers, value) {
+  // Change code below this line
+  const filteredNumbers = [];
+
+  for (const number of numbers) {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  }
+
+  return filteredNumbers;
+  // Change code above this line
+}
+
+//28
+// Change code below this line
+const a = 3 % 3;
+const b = 4 % 3;
+const c = 11 % 4;
+const d = 12 % 7;
+const e = 8 % 3;
+
+//29
+function getEvenNumbers(start, end) {
+  const result = [];
+  for (let i = start; i <= end; i++) {
+    if (i % 2 === 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+
+//30
+const start = 6;
+const end = 27;
+let number;
+
+for (let i = start; i < end; i += 1) {
+  if (i % 5 === 0) {
+    number = i;
+    break;
+  }
+}
+
+//31
+function findNumber(start, end, divisor) {
+  // Change code below this line
+  let number;
+
+  for (let i = start; i < end; i += 1) {
+    if (i % divisor === 0) {
+      return i;
+    }
+  }
+
+  // Change code above this line
+}
+
+//32
+function includes(array, value) {
+  // Change code below this line
+  for (const arr of array) {
+    if (arr === value) {
+      return true;
+    }
+  }
+  return false;
+  // Change code above this line
+}
